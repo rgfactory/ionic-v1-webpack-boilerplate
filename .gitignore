@@ -22,6 +22,7 @@ coverage/
 dist/
 resources/android/
 resources/ios/
+resources/*.md5
 node_modules/
 www/
 tmp/
