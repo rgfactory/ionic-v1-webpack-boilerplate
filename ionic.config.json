@@ -1,6 +1,8 @@
 {
-  "name": "myRally2",
-  "integrations": {},
+  "name": "ionic_v1_webpack_boilerplate",
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic1",
   "watchPatterns": [
     "scss/**/*",

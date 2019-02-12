@@ -20,6 +20,8 @@ npm-debug.log*
 .versions/
 coverage/
 dist/
+resources/android/
+resources/ios/
 node_modules/
 www/
 tmp/
