@@ -25,6 +25,9 @@ resources/ios/
 resources/*.md5
 node_modules/
 www/
+!www/lib/
+!www/manifest.json
+!www/service-worker.json
 tmp/
 temp/
 platforms/
