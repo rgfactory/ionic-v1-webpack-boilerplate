@@ -39,23 +39,26 @@ npm install
 ## Configuration
 
 ### Development
+
+Webpack will build hmtl, css and js files into the www directory and watch changes.
 ```sh
 npm run dev
 ```
-Webpack will build hmtl, css and js files into the www directory and watch changes.
-
+This command will start the ionic dev server with the liveroad option enabled.
 ```sh
 ionic serve
 ```
-It will start the ionic dev server with the liveroad option enabled
-
 
 ### Production
+
+Webpack will build hmtl, css and js files into the www directory. Files will be minified and uglyfied.
 ```sh
 npm run prod
 ```
-Webpack will build hmtl, css and js files into the www directory. Files will be minified and uglyfied.
-
+add the targeted platform to your ionic project
+```sh
+ionic cordova platform add android
+```
 Generate ionic resources
 ```sh
 ionic cordova resources
