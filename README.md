@@ -65,7 +65,7 @@ ionic cordova resources
 ```
 Run app on android device (or emulator if there is no device connected)
 ```sh
-ionic cordova platform run android --no-build
+ionic cordova run android --no-build
 ```
 The --no-build option cancels the ionic build task which uses gulp.
 To be able to run the app on android, you need to install the android sdk. You can do it with [Android Studio](https://developer.android.com/studio/#downloads).
