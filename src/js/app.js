@@ -6,11 +6,14 @@ import '../scss/global.scss';
 import config from './config/app.config';
 import run from './config/app.run';
 
-import './pages/home/home.module'
+import './pages/home/home.module';
+
+import './components/components.module';
 
 let requires = [
   'ionic',
-  'app.home'
+  'app.home',
+  'app.components'
 ];
 
 // angular.module is a global place for creating, registering and retrieving Angular modules

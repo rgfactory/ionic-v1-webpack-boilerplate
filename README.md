@@ -72,6 +72,7 @@ To be able to run the app on android, you need to install the android sdk. You c
 
 ## Documentation
 [Ionic v1 documentation](https://ionicframework.com/docs/v1/)
+[AngularJS components documentation](https://code.angularjs.org/1.5.3/docs/guide/component)
 
 <!-- ## Troubleshooting/Issues -->
 
