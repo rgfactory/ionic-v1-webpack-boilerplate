@@ -4,7 +4,6 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const FontminPlugin = require('fontmin-webpack');
 
 let prod = false;
 if (process.env.NODE_ENV === 'production') {
@@ -74,8 +73,4 @@ module.exports = config;
 if (prod) {
     module.exports.plugins.push(new OptimizeCSSAssetsPlugin());
     module.exports.optimization.minimizer.push(new UglifyJsPlugin());
-    /*module.exports.plugins.push(new FontminPlugin({
-        autodetect: true, // automatically pull unicode characters from CSS
-        glyphs: ['\uf0c8' /!* extra glyphs to include *!/],
-    }));*/
 }
