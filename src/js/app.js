@@ -4,6 +4,8 @@ import '../scss/ionic.app.scss'; // Include all of ionic
 import '../scss/global.scss';
 import './components/message/message.scss';
 
+import './../lib/ionic/js/ionic.bundle';
+
 import config from './config/app.config';
 import run from './config/app.run';
 
