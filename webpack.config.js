@@ -4,6 +4,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const FontminPlugin = require('fontmin-webpack');
 
 let prod = false;
 if (process.env.NODE_ENV === 'production') {
@@ -43,9 +44,7 @@ let config = {
                 test: /\.(html)$/,
                 use: {
                     loader: 'html-loader',
-                    options: {
-                        // attrs: false // Images are loaded on the client side
-                    }
+                    options: {}
                 }
             },
             {
@@ -63,7 +62,7 @@ let config = {
     },
     plugins: [
         new MiniCssExtractPlugin({filename: "../css/styles.css"}), // relative path to output.path above
-        new CopyWebpackPlugin([{ from: "src/index.html", to: "../index.html" }]) // copy index.html into www
+        new CopyWebpackPlugin([{ from: "src/index.html", to: "../index.html" }]), // copy index.html into www
     ],
     optimization: {
         minimizer: [],
@@ -74,5 +73,9 @@ module.exports = config;
 
 if (prod) {
     module.exports.plugins.push(new OptimizeCSSAssetsPlugin());
-    module.exports.optimization.minimizer.push(new UglifyJsPlugin())
+    module.exports.optimization.minimizer.push(new UglifyJsPlugin());
+    /*module.exports.plugins.push(new FontminPlugin({
+        autodetect: true, // automatically pull unicode characters from CSS
+        glyphs: ['\uf0c8' /!* extra glyphs to include *!/],
+    }));*/
 }
