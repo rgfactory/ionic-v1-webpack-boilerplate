@@ -42,14 +42,28 @@ let config = {
             {
                 test: /\.(html)$/,
                 use: {
-                    loader: 'html-loader' // maybe it will create problems with images in templates...
+                    loader: 'html-loader',
+                    options: {
+                        // attrs: false // Images are loaded on the client side
+                    }
                 }
+            },
+            {
+                test: /\.(png|jpg|gif)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            outputPath: '../img/', // relative to MiniCssExtractPlugin loader
+                            name:'[name].[ext]'
+                        }
+                    }
+                ],
             }]
     },
     plugins: [
         new MiniCssExtractPlugin({filename: "../css/styles.css"}), // relative path to output.path above
         new CopyWebpackPlugin([{ from: "src/index.html", to: "../index.html" }]) // copy index.html into www
-        // new CopyWebpackPlugin([{ from: "src/templates/", to: "../templates/" }])
     ],
     optimization: {
         minimizer: [],
