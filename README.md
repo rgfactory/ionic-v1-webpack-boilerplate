@@ -1,8 +1,18 @@
 # ionic-v1-webpack-boilerplate
-A ionic v1 boilerplate which uses webpack instead of gulp to build the app
+A ionic v1 boilerplate which uses webpack instead of gulp to build the app.
 
 ## Introduction
 
+The 1.5.3 angularJS version is suitable for a component-based application structure.  
+
+This makes it easier to write an app in a way that's similar to using Web Components or using Angular 2's style of application architecture.
+                                
+    Advantages of Components:
+                                
+      * simpler configuration than plain directives
+      * promote sane defaults and best practices
+      * optimized for component-based architecture
+      * writing component directives will make it easier to upgrade to Angular 2
 
 
 ## Requirements
