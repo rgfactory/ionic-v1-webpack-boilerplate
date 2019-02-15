@@ -17,7 +17,7 @@ let config = {
         path: path.resolve(__dirname, "./www/js"),
         filename: "./main.js"
     },
-    devtool: prod ? "source-map" : "eval-source-map", // I have to test this
+    devtool: prod ? "source-map" : "eval-source-map",
     module: {
         rules: [
             {
