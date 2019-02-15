@@ -71,8 +71,10 @@ The --no-build option cancels the ionic build task which uses gulp.
 To be able to run the app on android, you need to install the android sdk. You can do it with [Android Studio](https://developer.android.com/studio/#downloads).
 
 ## Documentation
-[Ionic v1 documentation](https://ionicframework.com/docs/v1/)
-[AngularJS components documentation](https://code.angularjs.org/1.5.3/docs/guide/component)
+[Ionic v1 documentation](https://ionicframework.com/docs/v1/)  
+[AngularJS components documentation](https://code.angularjs.org/1.5.3/docs/guide/component)  
+[Ionicons 2.0.1](https://ionicons.com/v2/)  
+[Ionicons usage](https://github.com/ionic-team/ionicons#user-content-basic-usage-1)
 
 <!-- ## Troubleshooting/Issues -->
 
