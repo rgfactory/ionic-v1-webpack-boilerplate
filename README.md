@@ -29,7 +29,7 @@ Clone the repository
 ```sh
 git clone https://github.com/rgfactory/ionic-v1-webpack-boilerplate.git yourProjectName
 ```
-Go into the your project directory
+Go into the project directory
 ```sh
 cd yourProjectName
 ```
