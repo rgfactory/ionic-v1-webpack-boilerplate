@@ -3,7 +3,7 @@ A ionic v1 boilerplate which uses webpack instead of gulp to build the app.
 
 ## Introduction
 
-The 1.5.3 angularJS version is suitable for a component-based application structure.  
+Ionic v1 uses the 1.5.3 angularJS version which is suitable for a component-based application structure.  
 
 This makes it easier to write an app in a way that's similar to using Web Components or using Angular 2's style of application architecture.
                                 
