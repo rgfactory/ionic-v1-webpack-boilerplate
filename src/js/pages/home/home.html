@@ -5,8 +5,9 @@
 
     <ion-content class="home">
 
-        <message data="$ctrl.firstMessage"></message>
-        <message data="$ctrl.secondMessage"></message>
+        <div ng-repeat="todo in $ctrl.todos track by todo.id">
+            <todo data="todo"></todo>
+        </div>
 
     </ion-content>
 </ion-view>

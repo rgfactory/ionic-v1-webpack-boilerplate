@@ -2,7 +2,7 @@
 
 import '../scss/ionic.app.scss'; // Include all of ionic
 import '../scss/global.scss';
-import './components/message/message.scss';
+import './components/todo/todo.scss';
 
 import './misc/misc';
 import './misc/console';
